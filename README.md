@@ -1,5 +1,7 @@
 # Preset Eslint com suporte a Typescript, React e Prettier
 
+[English version](docs/README_ENGLISH.md)
+
 Esse projeto é um preset do Eslint que inclui regras para projetos que utilizam Typescript, React (ou NEXT) e Prettier.
 
 ## Instalação
