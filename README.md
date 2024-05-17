@@ -1,6 +1,6 @@
 # Preset Eslint com suporte a Typescript, React e Prettier
 
-Esse projeto é um preset do Eslint que inclui regras para projetos que utilizam Typescript, React (ou NEXT) e Prettier, especificamente os projetos que compõem o NFA e o BEES-HUB.
+Esse projeto é um preset do Eslint que inclui regras para projetos que utilizam Typescript, React (ou NEXT) e Prettier.
 
 ## Instalação
 
@@ -38,7 +38,7 @@ Esse preset inclui as seguintes configurações:
 * **airbnb-typescript**: inclui as regras recomendadas pelo estilo de código do Airbnb para projetos que utilizam Typescript.
 * **plugin:prettier/recommended**: inclui as regras recomendadas pelo plugin Prettier.
 
-### Regras
+### Regras adicionais
 
 * **max-params**: limita o número máximo de parâmetros em uma função.
 * **react/react-in-jsx-scope**: desativa o aviso de que o React deve ser importado em arquivos JSX.
@@ -54,9 +54,3 @@ Esse preset inclui as seguintes configurações:
 * **import/no-extraneous-dependencies**: impede a importação de dependências desnecessárias em arquivos de teste e mocks.
 * **prefer-destructuring**: exige a desestruturação de objetos e arrays quando possível.
 * **@typescript-eslint/ban-types**: proíbe o uso de tipos específicos do Typescript.
-
-### Plugins
-
-* **react**: o plugin React para o Eslint.
-* **react-hooks**: o plugin React Hooks para o Eslint.
-* **prettier**: o Prettier.
