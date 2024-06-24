@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "pnpm eslint ./ --ext js,ts,tsx",
+    "format": "pnpm prettier ./__eslinttests__ --write && pnpm eslint ./__eslinttests__ --fix --ext js,ts,tsx",
     "test": "eslint __eslinttests__ --report-unused-disable-directives"
   },
   "repository": {
