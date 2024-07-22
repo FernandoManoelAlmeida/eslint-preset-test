@@ -5,6 +5,7 @@ module.exports = {
   },
   parser: "@typescript-eslint/parser",
   extends: [
+    'next/core-web-vitals',
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
