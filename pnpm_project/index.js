@@ -1,31 +1,31 @@
-{
-  "env": {
-    "browser": true,
-    "es2021": true
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
   },
-  "parser": "@typescript-eslint/parser",
-  "extends": [
+  parser: "@typescript-eslint/parser",
+  extends: [
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:jest/recommended",
     "airbnb",
     "plugin:@typescript-eslint/recommended",
     "airbnb-typescript",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
   ],
-  "plugins": ["react", "react-hooks", "prettier"],
-  "parserOptions": {
-    "project": ["**/tsconfig.json"],
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+  plugins: ["react", "react-hooks", "prettier"],
+  parserOptions: {
+    project: ["**/tsconfig.json"],
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  "settings": {
-    "react": { "version": "detect" },
+  settings: {
+    react: { version: "detect" },
     "import/resolver": {
-      "typescript": {}
-    }
+      typescript: {},
+    },
   },
-  "rules": {
+  rules: {
     "max-params": ["warn", 3],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
@@ -40,46 +40,48 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/mocks/**", "**/*.test.{ts,tsx}"]
-      }
+        devDependencies: ["**/mocks/**", "**/*.test.{ts,tsx}"],
+      },
     ],
     "prefer-destructuring": [
       "error",
       {
-        "array": true,
-        "object": true
+        array: true,
+        object: true,
       },
       {
-        "enforceForRenamedProperties": false
-      }
+        enforceForRenamedProperties: false,
+      },
     ],
     "@typescript-eslint/ban-types": [
       "error",
       {
-        "types": {
+        types: {
           "React.FC": {
-            "message": "Please don't use React.FC instead.",
-            "fixWith": "Prefer explicit definition children, like ReactNode or PropsWithChildren interface"
+            message: "Please don't use React.FC instead.",
+            fixWith:
+              "Prefer explicit definition children, like ReactNode or PropsWithChildren interface",
           },
           "React.FunctionalComponent": {
-            "message": "Please use React.FunctionalComponent instead.",
-            "fixWith": "Prefer explicit definition children, like ReactNode or PropsWithChildren interface"
-          }
-        }
-      }
-    ]
+            message: "Please use React.FunctionalComponent instead.",
+            fixWith:
+              "Prefer explicit definition children, like ReactNode or PropsWithChildren interface",
+          },
+        },
+      },
+    ],
   },
-  "overrides": [
+  overrides: [
     {
-      "files": ["./analytics/**"],
-      "rules": {
+      files: ["./analytics/**"],
+      rules: {
         "@typescript-eslint/no-var-requires": "off",
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "global-require": "off",
         "no-prototype-builtins": "off",
-        "no-console": "off"
-      }
-    }
-  ]
-}
+        "no-console": "off",
+      },
+    },
+  ],
+};

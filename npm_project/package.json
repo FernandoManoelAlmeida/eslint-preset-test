@@ -1,8 +1,12 @@
 {
-  "name": "eslint-preset-test",
+  "name": "eslint-config-preset-npm_project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "lint": "eslint ./ --ext js,ts,tsx",
     "format": "npx prettier ./__eslinttests__ --write && npx eslint ./__eslinttests__ --fix --ext js,ts,tsx",
